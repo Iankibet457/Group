@@ -6,7 +6,7 @@ import  Create  from './Create'
 function App() {
   const [fruits, setFruits] = useState([])
 
-  // Fetch data once when component mounts
+  
   if (fruits.length === 0) {
     fetch("http://localhost:3000/fruits")
       .then(response => response.json())
@@ -20,10 +20,21 @@ function App() {
   const handleDelete = (fruitId) => {
     setFruits(fruits.filter(fruit => fruit.id !== fruitId))
   }
+  const handleUpdate = (updatedFruit)=>{
+    setFruits(fruits.map((fruit,)=>
+
+        
+      fruit.id === updatedFruit.id ? updatedFruit : fruit
+        
+       
+        
+    ))
+
+  }
 
   return (
     <div>
-      <Display fruits={fruits} onDelete={handleDelete} />
+      <Display fruits={fruits} onDelete={handleDelete} onUpdate={handleUpdate}/>
       <Create onAddFruit={handleAddFruit} />
      
     </div>

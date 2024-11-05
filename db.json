@@ -1,22 +1,10 @@
 {
   "fruits": [
     {
-      "name": "Apple",
-      "color": "Red",
-      "taste": "Sweet",
-      "id": "1"
-    },
-    {
       "name": "Banana",
-      "color": "Yellow",
-      "taste": "Sweet",
+      "color": "yellow",
+      "taste": "sweet",
       "id": "2"
-    },
-    {
-      "name": "Orange",
-      "color": "Orange",
-      "taste": "Citrus",
-      "id": "3"
     },
     {
       "name": "Lemon",
@@ -29,6 +17,12 @@
       "color": "Red",
       "taste": "Sweet",
       "id": "5"
+    },
+    {
+      "id": "539a",
+      "name": "Apple",
+      "color": "red",
+      "taste": "sweet"
     }
   ]
 }
